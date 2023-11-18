@@ -24,15 +24,9 @@ interface State<T> {
     error?: Error
 }
 type Cache<T> = { [url: string]: T }
-type Action<T> =
-    | { type: "loading" }
-    | { type: "fetched"; payload: T }
-    | { type: "error"; payload: Error }
+type Action<T> = { type: "loading" } | { type: "fetched"; payload: T } | { type: "error"; payload: Error }
 
-export function useFetch<T = unknown>(
-    url?: string,
-    options?: RequestInit,
-): State<T> {
+export function useFetch<T = unknown>(url?: string, options?: RequestInit): State<T> {
     const cache = useRef<Cache<T>>({})
 
     const cancelRequest = useRef<boolean>(false)
@@ -102,10 +96,7 @@ export function useFetch<T = unknown>(
     return state
 }
 
-export function useDidUpdateEffect(
-    fn: () => void,
-    inputs: DependencyList | undefined,
-) {
+export function useDidUpdateEffect(fn: () => void, inputs: DependencyList | undefined) {
     const didMountRef = useRef(false)
 
     useEffect(() => {

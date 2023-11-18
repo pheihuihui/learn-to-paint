@@ -1,5 +1,6 @@
 import es from "esbuild"
 import fs from "fs"
+import * as sass from "sass"
 
 const dir_client = "./dist"
 
@@ -20,3 +21,6 @@ es.buildSync({
     platform: "browser",
     treeShaking: true,
 })
+
+let res = sass.compile("./src/styles/index.scss")
+fs.writeFileSync(`${dir_client}/client.css`, res.css)

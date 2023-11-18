@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+#rootdiv {
+    height: 100%;
+}
+
+.side-navigation-panel {
+    background-color: gray;
+}
+
+.nav-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+.nav-content {
+    flex-grow: 1;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
