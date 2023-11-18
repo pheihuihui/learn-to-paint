@@ -20,6 +20,7 @@ es.buildSync({
     tsconfig: "./tsconfig.json",
     platform: "browser",
     treeShaking: true,
+    loader: { ".wgsl": "text" },
 })
 
 let res = sass.compile("./src/styles/index.scss")

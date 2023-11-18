@@ -19,7 +19,7 @@ export const NavSidebar: FC = () => {
                 }}
                 items={[
                     { title: "Home", itemId: "/" },
-                    { title: "Notes", itemId: "/notes" },
+                    { title: "Hello Triangle", itemId: "/hello-triangle" },
                     { title: "Notes2", itemId: "/notes2" },
                     { title: "Notes3", itemId: "/notes3" },
                     { title: "Notes4", itemId: "/notes4" },

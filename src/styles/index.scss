@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 200px;
+    width: 300px;
     background-color: antiquewhite;
 }
 
@@ -32,4 +32,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hello-world-triangle {
+    border-radius: 50px;
+    background-color: darkcyan;
 }
