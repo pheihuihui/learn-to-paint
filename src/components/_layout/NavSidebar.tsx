@@ -1,6 +1,6 @@
 import { SideNavigation } from "./SideNavigation"
 import { useNavigate, useLocation } from "react-router-dom"
-import React, { FC, useState } from "react"
+import React, { FC } from "react"
 
 export const NavSidebar: FC = () => {
     const history = useNavigate()
@@ -20,7 +20,7 @@ export const NavSidebar: FC = () => {
                 items={[
                     { title: "Home", itemId: "/" },
                     { title: "Hello Triangle", itemId: "/hello-triangle" },
-                    { title: "Notes2", itemId: "/notes2" },
+                    { title: "Dots", itemId: "/dots" },
                     { title: "Notes3", itemId: "/notes3" },
                     { title: "Notes4", itemId: "/notes4" },
                 ]}

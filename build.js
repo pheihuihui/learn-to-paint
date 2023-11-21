@@ -15,7 +15,7 @@ fs.copyFileSync("./resources/index.html", `${dir_client}/index.html`)
 es.buildSync({
     entryPoints: ["./src/index.ts"],
     outfile: `${dir_client}/client.js`,
-    minify: false,
+    minify: true,
     bundle: true,
     tsconfig: "./tsconfig.json",
     platform: "browser",
